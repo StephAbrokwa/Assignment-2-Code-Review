@@ -36,6 +36,7 @@ if(is.numeric(as.numeric(value)) &     # this is added so we can check if the in
   # e.g., if the inputted text is 198, we'd remove 8 (third digit) and 100 (first digit times 100), leaving 90
   # then dividing it by 10 yields 9 (second digit)
   
+  #SA: Love how you split it into three sections; makes it easier for the reviewer to understand how the formula is broken down 
   
   if(value == ((first_digit)^3 + (second_digit)^3 + (third_digit)^3)){                 # in the condition, R compares if the user's inputted number matches the sum of the cubes of its digits
     
@@ -57,12 +58,16 @@ if(is.numeric(as.numeric(value)) &     # this is added so we can check if the in
 # here, if-else prints the error message when the user's entry is not numeric
 # the error message is also printed when it is not a positive three-digit integer (done just for fun!)
 
-#Assignment Guidelines
+#SA: Assignment Guidelines
     # They successfully printed a message to prompt the user to enter a three digit positive number 
-    # They successfully ensured that the user input 
+    # They successfully ensured that the user input is numeric "(is.numeric(as.numeric(value))" and "(as.numeric(value)) %% 1 == 0"
+    # They successfully made the input a three digit number using nchar, ensured the integer was positive using this "(as.numeric(value)) > 0)"
+    # They successfully created a formula to detect which numbers are Narcissistic numbers - all narcissistic numbers were able to be detected 
+    # Error message pops up for most invalid entries 
 
-#Specific Code Line Comments 
+#SA: Suggestions for Improvement 
+    # When the user types in a three digit number that begins with 0's for example 001 the code will still treat it as a three digit number 
+        # If you input a few more lines of code to ensure the values are from 100-999 it will resolve this issue 
+    # When the user types in a three lettered word such as pop
 
-#Suggestions for Improvement 
-
-#Overall Opinion
+#SA: Overall Opinion
