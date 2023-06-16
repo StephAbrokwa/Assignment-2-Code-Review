@@ -66,8 +66,14 @@ if(is.numeric(as.numeric(value)) &     # this is added so we can check if the in
     # Error message pops up for most invalid entries 
 
 #SA: Suggestions for Improvement 
-    # When the user types in a three digit number that begins with 0's for example 001 the code will still treat it as a three digit number 
+    # When the user types in a three digit number that begins with 0's for example "001" the code will still treat it as a three digit number 
         # If you input a few more lines of code to ensure the values are from 100-999 it will resolve this issue 
-    # When the user types in a three lettered word such as pop
+    # When the user types in a three lettered word such as "pop" the error message: "Entry is not valid. Please ensure your input is a three-digit positive integer. Terminating..." does not pop up
+        # If you input lines of code to make sure all letters promot the error message it will resolve this problem 
 
 #SA: Overall Opinion
+    # Followed assignment guidelines effectively 
+    # Displayed great defensive coding techniques 
+    # Code was easy to understand and follow - great comments to ensure the user knows what each line is generating 
+    # Only a few minor alterations could be made outlined in the suggestions for improvement 
+    # GREAT JOB SHAWN
